@@ -40,19 +40,16 @@
     height: 300px;
     margin: 0 auto;
     background-color: #87ceed;
-    position: relative;
 }
 #bottom-child01,#bottom-child02,#bottom-child03 {
     width: 400px;
     height: 100px;
     background-color: #e5dcf0;
-    position: absolute;
+    position: relative;
 }
 #bottom-child02 {
-    top: 100px;
     left: 200px;
 }
 #bottom-child03 {
-    top: 200px;
     left: 400px;
 }
