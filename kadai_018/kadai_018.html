@@ -1,56 +1,26 @@
-#top {
-    width: 800px;
-    background-color: #dcc9f4;
-    margin: 20px auto;
-    text-align: center;
-}
-.top-child {
-    width: 20%;
-    background-color: #ffd9df;
-    display: inline-block;
-    text-align: center; /* 親要素で適用したtext-alignは子要素にも継承される？ */
-}
-#middle {
-    width: 800px;
-    height: 800px;
-    margin: 20px auto;
-    position: relative;
-    background-color: #ffd9df;
-}
-#middle-child01,#middle-child02,#middle-child03 {
-    width: 200px;
-    height: 200px;
-    background-color: #87ceeb;
-    position: absolute;
-}
-#middle-child01 {
-    top: 100px;
-    left: 100px;
-}
-#middle-child02 {
-    top: 300px;
-    left: 300px;
-}
-#middle-child03 {
-    top: 500px;
-    left: 500px;
-}
-#bottom {
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-    background-color: #87ceeb;
-    position: relative;
-}
-#bottom-child01,#bottom-child02,#bottom-child03 {
-    width: 400px;
-    height: 100px;
-    background-color: #e5dcf0;
-    position: relative;
-}
-#bottom-child02 {
-    left: 200px;
-}
-#bottom-child03 {
-    left: 400px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="このページは18章の課題です。">
+  <title>18章課題</title>
+</head>
+<body>
+  <div id="top">
+    <p class="top-child">sample</p>
+    <p class="top-child">sample</p>
+    <p class="top-child">sample</p>
+  </div>
+  <div id="middle">
+    <div id="middle-child01"></div>
+    <div id="middle-child02"></div>
+    <div id="middle-child03"></div>
+  </div>
+  <div id="bottom">
+    <div id="bottom-child01"></div>
+    <div id="bottom-child02"></div>
+    <div id="bottom-child03"></div>
+  </div>
+</body>
+</html>
