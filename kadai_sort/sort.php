@@ -13,14 +13,14 @@
         $nums = [15, 4, 18, 23, 10 ];
 
         function sort_2way($array, $order) {
-            if($order == 'true'){
+            if($order){
                 // 昇順ソート
                 echo '昇順ソートにします。'.'<br>';
                 sort($array);
                 foreach($array as $num){
                     echo $num . '<br>';
                 }
-            }elseif($order == 'false'){
+            }elseif(!$order){
                 // 降順ソート
                 echo '降順ソートにします。'.'<br>';
                 rsort($array);
@@ -30,8 +30,8 @@
             }
         }
         
-        sort_2way($nums, 'true');
-        sort_2way($nums, 'false');
+        sort_2way($nums, TRUE);
+        sort_2way($nums, FALSE);
         
         ?>
     </p>
